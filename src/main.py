@@ -1,6 +1,12 @@
 import sys
 
+# Lecture du fichier fpp
+file = open('../dist/test.fpp')
+file_content = file.read()
+
 def main() -> None:
-    print('Hello World')
+    global file_content
+    print(str(file_content))
 
 main()
+file.close()
